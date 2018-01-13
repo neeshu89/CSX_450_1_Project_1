@@ -62,8 +62,8 @@
    docker pull jupyter/datascience-notebook
      - This is a >6GB file and will take a few minutes to download
 2. Once this is complete, bind this image to a port so that you can access it using the command
-   docker run -v /home/ubuntu:/home/jovyan -p 8888:8888 -d jupyter/datascience-notebook
-      - This command matches your host user (ubuntu) to your client user (jovyan) to the matching 8888 ports, and runs the jupyter notebook on the machine
+   docker run -v /home/ubuntu:/home/jovyan -p PORT:8888 -d jupyter/datascience-notebook
+      - This command matches your host user (ubuntu) to your Jupyter user (jovyan), connects the open/public PORT and Jupyter port (8888), and runs the jupyter notebook on the machine
 3. Get the notebook's security token by entering the following command:
    docker exec #### jupyter notebook list (where #### is the first 4 digits of your docker image)
      - You can find these 4 digits by looking at the response from the 'docker run' command or by running the command 'docker ps'
