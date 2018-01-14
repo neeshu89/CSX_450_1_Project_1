@@ -75,3 +75,16 @@
    i.e. XX.XXX.XXX.XXX:8888
 2. When prompted, enter your security token from number 4 of the previous step.
 3. Have fun!
+
+## Budgeting your AWS Server
+ - Running an AWS Server has a free tier for its server that is free for up to 750 hours/month. on a T2 Micro, that means you can get 1 instance at 1GB Memory with 1 vCPU for free for a year.
+ - After this free year, the t2.micro costs $0.0116 per Hour to run Linux or Unix (in Oregon). Here are the 3 month costs of 3 different t2.micros (assuming 92 days) for the server itself:
+    - t2.micro - $25.61 - (general purpose) at $0.0116 per Hour
+    - c5.large - $187.68 - (compute optimized) at $0.085 per Hour
+    - p2.xlarge - $1,987.20 - (GPU instance) at $0.9 per Hour
+ - Storage up to 30GB is free, but after your free year, the cost is $0.10 per GB per month. For 30GB, 3 months will cost $9.00, putting total costs for each instance for 3 months at:
+    - t2.micro - $34.61
+    - c5.large - $196.68
+    - p2.xlarge - $1,996.20
+    
+## Diagram of Docker Setup and Connection
