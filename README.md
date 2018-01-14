@@ -88,4 +88,4 @@
     - p2.xlarge - $1,996.20
     
 ## Diagram of Docker Setup and Connection
-!https://github.com/neeshu89/CSX_450_1_Project_1/blob/master/Docker%20Diagram.PNG
+![picture](https://github.com/neeshu89/CSX_450_1_Project_1/blob/master/Docker%20Diagram.PNG)
